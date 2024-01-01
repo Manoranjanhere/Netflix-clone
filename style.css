@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@700&display=swap');
+*
+{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("img/0af6ce3e_b27a_4722_a5f0_e32af4df3045_what_is_netflix_5_en.avif");
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: max(1200px,100vw);
+    
+}
+.main .box
+{
+    opacity:0.5;
+    height:85vh;
+    width:100%;
+    position: absolute;
+    top:0;
+    background-color: black;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60vw;
+    margin: auto;
+    height: 100px;
+
+}
+nav img
+{
+    mix-blend-mode:exclusion;
+width: 120px;
+clip-path:inset(0 0 12px 0);
+position: relative;
+z-index: 10;
+margin-top: 10px;
+}
+nav button
+{
+    position: relative;
+    z-index: 10;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.hero
+{
+    height:calc(100%-62px);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 30px;
+    padding:0 30px;
+    margin-top: 60px;;
+}
+.hero> :nth-child(1)
+{
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+.hero> :nth-child(2)
+{
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3)
+{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.separation
+{
+    height: 7px;
+    background-color: rgb(48, 47, 47);
+}
+.email
+{
+    position: relative;
+    margin-top: 15px;
+}
+.btn
+{
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    cursor: pointer;
+}
+.btn-red
+{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size:20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+.main input
+{
+    padding: 3px 24px;
+    font-size:20px;
+    border-radius: 4px;
+    color: white;
+    background-color:transparent;
+    border: 1px solid rgba(227, 216, 216, 0.5)
+}
+.btn-red-sm
+{
+    background-color: red;
+    color: white;
+}
+.first
+{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 937px){
+    .first{
+    flex-wrap: wrap;
+    }
+}
+section.first> div{
+    display:flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+.first >div :first-child
+{
+    margin-left: 20px;
+font-size: 48px;
+font-weight: bolder;
+}
+.first >div :nth-child(2)
+{
+    margin-left: 20px;
+    margin-top: 30px;
+font-size: 24px;
+font-weight: bolder;
+}
+.secimg
+{
+    position: relative;
+}
+.secimg .img1
+{
+    position: relative;
+    width:30vw;
+    left:18vw;
+}
+.secimg .video
+{
+    position: absolute;
+    width:18vw;
+    left:24vw;
+    
+    bottom: 128px;
+  height: 154px;
+
+}
+
+.phone
+{
+    width: 40vw;
+    opacity: 0.7;
+    margin-right: 500px;
+    position: relative;
+}
+.download
+{
+    position: absolute;
+    right:100px;
+}
+.kids
+{
+    position: absolute;
+    left:600px;
+}
+.faq h2{
+    margin-bottom: 35px;
+}
+.faq{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:50px;
+    font-size: 20px;
+}
+.faqbox svg{
+    filter: invert(1);
+}
+.faqbox
+{
+    display:flex;
+    padding: 10px;
+    color:white;
+    background-color: rgb(73, 71, 71);
+    justify-content: space-between;
+    align-items: center;
+    width:65vw;
+    margin:8px auto ;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.faqbox:hover
+{
+    filter: invert(1);
+    
+}
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color:white;
+    
+}
+@media screen and (max-width: 1000px)
+{
+    .footer{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        
+    }
+}
+footer{
+    color:white;
+    margin: auto;
+    max-width: 60vw;
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;;
+}
+.foot-item
+{
+    display:flex;
+    flex-direction: column;
+}
+.span{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
